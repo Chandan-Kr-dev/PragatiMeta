@@ -28,7 +28,7 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
   const randomRotateY = () => Math.floor(Math.random() * 21) - 10;
 
   return (
-    <div className="mx-auto max-w-sm px-4 py-10 font-sans antialiased md:max-w-4xl md:px-8 lg:px-12">
+    <div className="mx-auto max-w-xs px-2 py-6 font-sans antialiased md:max-w-4xl md:px-8 lg:px-12">
       <div className="relative grid grid-cols-1 gap-8 md:grid-cols-2">
         {/* Image */}
         <div>
@@ -64,7 +64,7 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
                     src={testimonial.src}
                     alt={testimonial.name}
                     draggable={false}
-                    className="h-full w-full rounded-3xl object-cover object-center"
+                    className="h-full w-full rounded-3xl object-contain object-center "
                   />
                 </motion.div>
               ))}

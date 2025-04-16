@@ -11,7 +11,7 @@ export const Logo = () => {
       transition={{ delay: 0.3 }}
       className="flex justify-center mt-4"
     >
-      <div className="flex items-center gap-2 p-3 rounded-lg bg-white/5 backdrop-blur-sm">
+      <div className="flex">
         <div className="w-25 h-20 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center overflow-hidden">
           <img 
             src="/Brandlogo.jpeg" 

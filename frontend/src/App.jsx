@@ -1,14 +1,13 @@
 
 import './App.css'
-import { Home,UserPlus,LayoutDashboardIcon  } from "lucide-react";
-import {motion} from 'framer-motion'
-import { BackgroundBeamsWithCollision } from './components/ui/background-beams-with-collision'
-import { FloatingNav } from './components/ui/floating-navbar'
+import Dashboard from './Dashboard';
 import { BrowserRouter ,Routes,Route} from 'react-router-dom';
 import Navbar from './Navbar'
 import Homepage from './Home'
 import { Logo } from './Logo';
 import Signup from './Signup'
+import Signin from './Signin';
+import NotFound from './NotFound';
 function App() {
  
   
@@ -24,7 +23,9 @@ function App() {
     <Routes>
       <Route path="/" element={<Homepage/>} />
       <Route path="/signup" element={<Signup/>} />
-      <Route path="/studashboard" element={"Dashboard"} />
+      <Route path="/studashboard" element={<Dashboard/>} />
+      <Route path="/signin" element={<Signin/>} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
     
   

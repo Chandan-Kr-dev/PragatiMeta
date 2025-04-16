@@ -8,6 +8,7 @@ export const BackgroundBeamsWithCollision = ({ children, className }) => {
   const parentRef = useRef(null);
 
   const beams = [
+    // Original beams
     {
       initialX: 10,
       translateX: 10,
@@ -93,6 +94,69 @@ export const BackgroundBeamsWithCollision = ({ children, className }) => {
       repeatDelay: 3,
       delay: 2,
     },
+    // New beams on the right side with higher frequency
+    {
+      initialX: 850,
+      translateX: 850,
+      duration: 4,
+      repeatDelay: 1,
+      delay: 0,
+      className: "h-16",
+    },
+    {
+      initialX: 950,
+      translateX: 950,
+      duration: 3,
+      repeatDelay: 1.5,
+      delay: 0.5,
+      className: "h-10",
+    },
+    {
+      initialX: 1050,
+      translateX: 1050,
+      duration: 5,
+      repeatDelay: 2,
+      delay: 1,
+      className: "h-12",
+    },
+    {
+      initialX: 1150,
+      translateX: 1150,
+      duration: 4.5,
+      repeatDelay: 1,
+      delay: 0.2,
+    },
+    {
+      initialX: 1250,
+      translateX: 1250,
+      duration: 3.5,
+      repeatDelay: 0.5,
+      delay: 0.8,
+      className: "h-8",
+    },
+    {
+      initialX: 1350,
+      translateX: 1350,
+      duration: 2.5,
+      repeatDelay: 1,
+      delay: 0.3,
+      className: "h-14",
+    },
+    {
+      initialX: 1400,
+      translateX: 1400,
+      duration: 3,
+      repeatDelay: 0.8,
+      delay: 0,
+    },
+    {
+      initialX: 1450,
+      translateX: 1450,
+      duration: 4,
+      repeatDelay: 1.2,
+      delay: 0.5,
+      className: "h-11",
+    },
   ];
 
   return (
@@ -148,7 +212,7 @@ const CollisionMechanism = React.forwardRef(
           const containerRect = containerRef.current.getBoundingClientRect();
           const parentRect = parentRef.current.getBoundingClientRect();
 
-          if (beamRect.bottom >= containerRect.top-100) {
+          if (beamRect.bottom >= containerRect.top-120) {
             const relativeX =
               beamRect.left - parentRect.left + beamRect.width / 2;
             const relativeY = beamRect.bottom - parentRect.top;
@@ -157,7 +221,7 @@ const CollisionMechanism = React.forwardRef(
               detected: true,
               coordinates: {
                 x: relativeX,
-                y: relativeY-100,
+                y: relativeY-120,
               },
             });
             setCycleCollisionDetected(true);

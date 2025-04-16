@@ -35,16 +35,16 @@ export default function FloatingFooter({ className }) {
   const mouseX = useMotionValue(Infinity);
 
   return (
-    <div className="w-full px-4 pb-4 pt-12 relative z-50">
+    <div className="w-full px-4 pb-4 pt-12 relative z-50 bg-black">
       <motion.footer
         onMouseMove={(e) => mouseX.set(e.pageX)}
         onMouseLeave={() => mouseX.set(Infinity)}
         className={cn(
-          "mx-auto flex flex-col items-center gap-4 rounded-xl border border-white/20 bg-white/10 backdrop-blur-md p-4 shadow-md w-full max-w-4xl",
+          "mx-auto flex flex-col items-center gap-4 rounded-xl border  p-4 backdrop-blur-md shadow-md  w-full ",
           className
         )}
       >
-        <div className="w-full flex flex-col md:flex-row items-center justify-between text-white text-xs gap-3">
+        <div className="w-full flex flex-col md:flex-row items-center justify-between text-white text-base gap-3">
           {/* Tagline */}
           <div className="text-center md:text-left font-light text-lg font-serif">
          <TextGenerateEffect
@@ -54,10 +54,12 @@ export default function FloatingFooter({ className }) {
           </div>
 
           {/* Quick Links */}
-          <div className="flex gap-4 font-semibold text-sm text-white">
+          <div className="flex gap-4 font-semibold text-lg text-white ">
             <a href="/" className="hover:text-blue-400 transition">Home</a>
             <a href="/signup" className="hover:text-blue-400 transition">Signup</a>
-            <a href="/features" className="hover:text-blue-400 transition">DashBoard</a>
+            <a href="/signin" className="hover:text-blue-400 transition">Signin</a>
+            <a href="/studashboard" className="hover:text-blue-400 transition">DashBoard</a>
+
           </div>
 
           {/* Contact & Social */}

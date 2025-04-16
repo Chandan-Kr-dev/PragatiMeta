@@ -31,7 +31,7 @@ const Homepage = () => {
     {
       name: "Danish Shah",
       designation: "Full Stack ,DBMS Developer",
-      quote: "Second Year IT Student at Techo Mains",
+      quote: "Second Year IT Student at Techno Mains Saltlake",
       src: "/Images/ME.jpeg",
       socials: [
         { platform: "instagram", url: "https://www.instagram.com/danish_shanil?igsh=M3hmMjNzZHcxOGtq" },
@@ -42,7 +42,7 @@ const Homepage = () => {
     {
       name: "Chandan Kumar",
       designation: "Backend,DBMS Developer",
-      quote:  "Second Year IT Student at Techo Mains",
+      quote:  "Second Year IT Student at Techno Mains Saltlake",
       src: "/Images/Chandan.jpeg",
       socials: [
         { platform: "instagram", url: "https://www.instagram.com/chandan_ck2409/" },
@@ -53,8 +53,8 @@ const Homepage = () => {
     },
     {
       name: "Abdul Rahman",
-      designation: "AI Expert",
-      quote:  "Second Year IT Student at Techo Mains",
+      designation: "AI Expert Lead",
+      quote:  "Second Year IT Student at Techno Mains Saltlake",
       src: "/Images/Abdul.jpeg",
       socials: [
         { platform: "instagram", url: "https://www.instagram.com/epsilonstar02/profilecard/?igsh=MTdzNHBoMjU4eHNlMg==" },
@@ -64,8 +64,8 @@ const Homepage = () => {
     },
     {
       name: "Ankit Kumar Jha",
-      designation:  "AI Expert,Product Resource Manager",
-      quote:  "Second Year IT Student at Techo Mains",
+      designation:  "AI Expert,Innpvation & Reaserch Lead",
+      quote:  "Second Year IT Student at Techno Mains Saltlake",
       src: "/Images/Ankit.jpeg", 
       socials: [
         { platform: "instagram", url: " https://www.instagram.com/virtual_shootout?igsh=eGcxdnEyOW13MTBx" },
@@ -89,7 +89,7 @@ const Homepage = () => {
         <GlassCard className="w-[90%] md:w-[60%] mx-auto  mb-10 ">
           
           <TypewriterEffect words={[{text:"OUR"},
-        {text:"VISION"}]} className="text-white/80 text-xs" />
+        {text:"VISION"}]} className="text-white/80 text-xl" />
           <motion.span
   className="bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent text-lg font-semibold text-center"
   initial={{ opacity: 0 }}
@@ -103,7 +103,7 @@ At the heart of our mission lies a bold and compassionate vision — to bridge t
         <GlassCard className="w-[90%] md:w-[60%] mx-auto mt-10 mb-10 p-6">
           {/* Additional content here */}
           <TypewriterEffect words={[{text:"ABOUT"},
-        {text:"US"}]} className="text-white/80 text-xs" />
+        {text:"US"}]} className="text-white/80 text-xl" />
             <motion.span
   className="bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent text-lg font-semibold text-center"
   initial={{ opacity: 0 }}
@@ -120,7 +120,7 @@ From classroom analytics to device redistribution, GyanGrid isn’t just EdTech 
        
         <GlassCard className="w-[90%] md:w-[60%] mx-auto mt-10 mb-10 p-6">
         <TypewriterEffect words={[{text:"OUR"},
-        {text:"PRODUCT"}]} className="text-white/80 text-xs" />
+        {text:"PRODUCT"}]} className="text-white/80 text-xl" />
      <motion.span   className="bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent text-lg font-semibold text-center"
   initial={{ opacity: 0 }}
   animate={{ opacity: 1 }}
@@ -142,7 +142,7 @@ It’s EduQuity.
         
         <GlassCard className="w-[90%] md:w-[60%] mx-auto mt-5 mb-5 p-3 h-50">
         <TypewriterEffect words={[{text:"MEET"},
-        {text:"US"}]} className="text-white/80 text-xs" />
+        {text:"US"}]} className="text-white/80 text-xl" />
   <AnimatedTestimonials testimonials={testimonials} autoplay />
         
         </GlassCard>
