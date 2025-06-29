@@ -64,7 +64,7 @@ const Homepage = () => {
     },
     {
       name: "Ankit Kumar Jha",
-      designation:  "AI Expert,Innpvation & Reaserch Lead",
+      designation:  "AI Expert,Innovation & Reaserch Lead",
       quote:  "Second Year IT Student at Techno Mains Saltlake",
       src: "/Images/Ankit.jpeg", 
       socials: [
